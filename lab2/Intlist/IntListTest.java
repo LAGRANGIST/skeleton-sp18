@@ -17,13 +17,14 @@ public class IntListTest {
         IntList threeTwoOne = new IntList(3, twoOne);
 
         IntList x = IntList.of(3, 2, 1);
+        // test the correctness of 'of' method
         assertEquals(threeTwoOne, x);
     }
 
     @Test
     public void testdSquareList() {
         IntList L = IntList.of(1, 2, 3);
-        IntList.dSquareList(L);
+        IntList.dSquareList(L); // destructive method
         assertEquals(IntList.of(1, 4, 9), L);
     }
 
